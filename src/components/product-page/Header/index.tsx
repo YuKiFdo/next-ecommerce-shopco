@@ -51,17 +51,17 @@ const Header = ({ data }: { data: Product }) => {
               </span>
             ) : (
               <span className="font-bold text-black text-2xl sm:text-[32px]">
-                ${data.price}
+                LKR{data.price}
               </span>
             )}
             {data.discount.percentage > 0 && (
               <span className="font-bold text-black/40 line-through text-2xl sm:text-[32px]">
-                ${data.price}
+                LKR{data.price}
               </span>
             )}
             {data.discount.amount > 0 && (
               <span className="font-bold text-black/40 line-through text-2xl sm:text-[32px]">
-                ${data.price}
+                LKR{data.price}
               </span>
             )}
             {data.discount.percentage > 0 ? (
